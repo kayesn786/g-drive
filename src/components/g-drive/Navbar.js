@@ -4,7 +4,11 @@ import { Link } from "react-router-dom";
 
 export default function NavbarComponent() {
   return (
-    <Navbar bg="light" expand="sm">
+    <Navbar
+      bg="light"
+      expand="sm"
+      style={{ display: "flex", justifyContent: "space-between" }}
+    >
       <Navbar.Brand as={Link} to="/">
         G Drive
       </Navbar.Brand>
